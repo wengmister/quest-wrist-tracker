@@ -129,9 +129,8 @@ public class AppManager : MonoBehaviour
 
     private void Update()
     {
-        // If streaming, check if the user clicks the Left Menu Button
-        // This is the flat button with three lines on the Left Quest Controller
-        if (isStreaming && OVRInput.GetDown(OVRInput.Button.Start, OVRInput.Controller.LTouch))
+        // If streaming, check if the user clicks the Menu Button on the Right controller
+        if (isStreaming && OVRInput.GetDown(OVRInput.Button.Start, OVRInput.Controller.RTouch))
         {
             StopStreaming(); 
         }
