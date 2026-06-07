@@ -129,12 +129,6 @@ public class AppManager : MonoBehaviour
 
     private void Update()
     {
-        // If streaming, check if the user clicks the Menu Button on the Right controller
-        if (isStreaming && OVRInput.GetDown(OVRInput.Button.Start, OVRInput.Controller.RTouch))
-        {
-            StopStreaming(); 
-        }
-
         if (!isStreaming)
         {
             ValidateNetwork();
